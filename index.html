@@ -30,8 +30,8 @@
                     <div><a href="#">首页</a></div>
                 </li>
                 <li>
-                    <div><a href="#">酷玩</a></div>
-                    <div><a href="#">酷玩</a></div>
+                    <div><a href="./src/play.html">酷玩</a></div>
+                    <div><a href="./src/play.html">酷玩</a></div>
                 </li>
                 <li>
                     <div><a href="#">导购</a></div>
@@ -94,23 +94,35 @@
 
         <!-- 头部背景 -->
         <div class="center_heard">
-            <div class="center_heard_inner">
-                <div class="center_heard_h">
-                    <h1>幻想小贝HiFi2.1音响</h1>
-                    <ul class="center_heard_h_t">
-                        <li><a href="#">200人申请</a></li>
-                        <li><a href="#">￥599</a></li>
-                        <li><a href="#">20台</a></li>
-                    </ul>
-                    <div class="center_heard_h_c">申请剩余时间: <span id="countdown"></span></div>
-                    <div class="center_heard_h_b"><button onclick="window.location.href='#'">立即申请</div>
+
+            <!-- 头部轮播图 -->
+            <div class="swiper-container" id="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="swiper-slide1">
+                        <div class="center_heard_inner">
+                            <div class="center_heard_h">
+                                <h1>幻想小贝HiFi2.1音响</h1>
+                                <ul id="center_heard_h_t">
+                                    <li><a href="#">200人申请</a></li>
+                                    <li><a href="#">￥599</a></li>
+                                    <li><a href="#">20台</a></li>
+                                </ul>
+                                <div class="center_heard_h_c">元旦狂欢倒计时: <span id="countdown"></span></div>
+                                <div class="center_heard_h_b"><button onclick="window.location.href='#'">立即申请</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="swiper-slide2"></div>
+                    <div class="swiper-slide" id="swiper-slide3"></div>
+                    <div class="swiper-slide" id="swiper-slide4"></div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
         <h2>热门试用</h2>
         <!-- 轮播图 -->
-        <div class="swiper-container">
+        <div class="swiper-container" id="swiper1">
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -262,7 +274,6 @@
 
 
         <!-- 详情页面 -->
-
         <div class="center_deta">
             <div class="center_deta_inner">
                 <!-- 报告精选 -->
@@ -275,15 +286,18 @@
                     <ul>
                         <li>
                             <div><img src="./image/img/bg1.jpg" alt="#"></div>
-                            <p><a href="#">空气净化器里边学问夺得惊呆你 ，你选对了吗？</a></p>
-                            <div>
+                            <div class="center_deta_b_text">
+
+                                <p><a href="#">空气净化器里边学问夺得惊呆你 ，你选对了吗？</a></p>
                                 <div>
-                                    <div class="loveRed"></div>
-                                    <div>苏苏</div>
-                                </div>
-                                <div>
-                                    <div class="aaa">3 </div>
-                                    <div>3</div>
+                                    <div>
+                                        <div class="loveRed"></div>
+                                        <div>苏苏</div>
+                                    </div>
+                                    <div>
+                                        <div class="aaa">3 </div>
+                                        <div>3</div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -300,15 +314,18 @@
                     <ul>
                         <li>
                             <div><img src="./image/img/bg1.jpg" alt="#"></div>
-                            <p><a href="#">空气净化器里边学问夺得惊呆你 ，你选对了吗？</a></p>
-                            <div>
+                            <div class="center_deta_b_text">
+
+                                <p><a href="#">空气净化器里边学问夺得惊呆你 ，你选对了吗？</a></p>
                                 <div>
-                                    <div class="loveRed"></div>
-                                    <div>苏苏</div>
-                                </div>
-                                <div>
-                                    <div class="aaa">3 </div>
-                                    <div>3</div>
+                                    <div>
+                                        <div class="loveRed"></div>
+                                        <div>苏苏</div>
+                                    </div>
+                                    <div>
+                                        <div class="aaa">3 </div>
+                                        <div>3</div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -325,18 +342,21 @@
                     <ul>
                         <li>
                             <div><img src="./image/img/bg1.jpg" alt="#"></div>
-                            <p class="center_deta_f_text">
-                                <div class="center_deta_f_text-1">SCIO微型光谱仪</div>
-                                <div class="center_deta_f_text-2">可以测定失误成分及营养</div>
-                            </p>
-                            <div>
-                                <div class="price_out">
-                                    <span>￥</span>
-                                    <span id="price_index">1212</span>
+                            <div class="center_deta_b_text">
+                                <div class="center_deta_f_text">
+                                    <div class="center_deta_f_text-1">SCIO微型光谱仪</div>
+                                    <div class="center_deta_f_text-2">可以测定失误成分及营养</div>
                                 </div>
                                 <div>
-                                    <div class="aaa">3 </div>
-                                    <div>3</div>
+                                    <div></div>
+                                    <div class="price_out">
+                                        <span>￥</span>
+                                        <span id="price_index">1212</span>
+                                    </div>
+                                    <div>
+                                        <div class="aaa">3 </div>
+                                        <div>3</div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -344,14 +364,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
 
     </section>
 
@@ -436,7 +448,25 @@
 
 <!-- 轮播图 -->
 <script>
-    var mySwiper = new Swiper('.swiper-container', {
+    // 第一个轮播
+    var mySwiper2 = new Swiper('#swiper2', {
+        autoplay: true, //可选选项，自动滑动
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    })
+    for (i = 0; i < mySwiper2.pagination.bullets.length; i++) {
+        mySwiper2.pagination.bullets[i].onmouseover = function () {
+            this.click();
+        };
+    }
+
+
+
+    //第二个轮播
+    var mySwiper = new Swiper('#swiper1', {
         direction: 'horizontal', // 水平切换选项
         loop: true, // 循环模式选项
         slidesPerView: 4,

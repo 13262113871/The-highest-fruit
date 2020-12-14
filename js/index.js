@@ -2,10 +2,10 @@
 //关注
 $('.aaa').on('click', function () {
     if ($(this).hasClass('bbb')) {
-        $(this).removeClass('bbb').css('background', 'url("../image/icon/zan.png")no-repeat 0px center')
+        $(this).removeClass('bbb').css('background', 'url("./image/icon/zan.png")no-repeat 0px center')
         $(this).html(3)
     } else {
-        $(this).addClass('bbb').css('background', 'url("../image/icon/zan_1.png")no-repeat 0px center')
+        $(this).addClass('bbb').css('background', 'url("./image/icon/zan_1.png")no-repeat 0px center')
         $(this).html(4)
     }
 })

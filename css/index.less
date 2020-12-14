@@ -11,26 +11,42 @@ section {
     .center_heard {
         width: 100%;
         height: 300px;
-        background: url(../image/icon/original.jpg) no-repeat center center;
+        #swiper2{
+            width: 100%;
+        .swiper-wrapper{
+            #swiper-slide1{
+                background: url(../image/icon/original1.jpg) no-repeat center center;
+                background-size: cover;
+                .center_heard_inner();
+            }
+            #swiper-slide2{background: url(../image/icon/original2.jpg) no-repeat center center;
+                background-size: cover;}
+            #swiper-slide3{background: url(../image/icon/original3.jpg) no-repeat center center;
+                background-size: cover;}
+            #swiper-slide4{background: url(../image/icon/original4.jpg) no-repeat center center;
+                background-size: cover;}
+        }
+
+
+        }
 
         .center_heard_inner {
             width: 1000px;
             height: 100%;
             margin: auto;
             position: relative;
-
+            z-index: 100;
             .center_heard_h {
                 position: absolute;
                 top: 50%;
                 right: 20px;
-                transform: translateY(-60%);
-                height: 220px;
+                transform: translateY(-55%);
+                height: 250px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: flex-end;
-                animation: 2s hcy ease-out;
-
+                animation: 3s hcy ease-out;
                 @keyframes hcy {
                     0% {
                         opacity: 1;
@@ -51,22 +67,18 @@ section {
                     color: #fcfcfc;
                 }
 
-                .center_heard_h_t {
+                #center_heard_h_t {
                     width: 220px;
                     display: flex;
-                    justify-content: flex-end;
+                    justify-content: space-around;
                     align-items: center;
-
-                    li {
+                    &>li {
                         list-style: none;
                         background-color: #f7d29b;
-                        border-radius: 8px;
-                        margin-left: 10px;
-                        border-radius: 5px;
-                        padding: 8px;
+                        border-radius: 4px;
+                        padding: 5px;
                         text-align: center;
-
-                        a {
+                        &>a {
                             font-size: 15px;
                             color: #fffbff;
                         }
@@ -162,7 +174,7 @@ section {
                 }
 
                 div {
-                    a {
+                    &>a {
                         display: inline-block;
                         margin: 4px 6px;
                         text-decoration: none;
@@ -180,7 +192,7 @@ section {
                     }
                 }
 
-                .lunbo_p1 {
+                a.lunbo_p1 {
                     font-size: 12px;
                     font-weight: 700;
                     color: #343843;
@@ -267,114 +279,134 @@ section {
                         border: 1px solid rgb(185, 177, 175);
 
                         &>div:first-child {
+                            position: relative;
                             img {
+                                    position: absolute;
                                 width: 100%;
                                 border-radius: 7px 7px 0 0;
-
                                 &:hover {
                                     opacity: .6;
                                 }
+                            } 
+                        }
+
+
+
+
+                        .center_deta_b_text {
+                            cursor: pointer;
+                            transition: 1s;
+                            &:hover{
+                                // height: 150px;
+                                z-index:100;
+                                background-color: rgb(255, 255, 255);
+                                opacity: .6;
+                                padding-top: 20px;
+                                padding-bottom: 50px;
                             }
-                        }
 
-                        &>p a {
-                            font-size: 13px;
-                            color: rgb(124, 115, 115);
-                            padding: 0px 20px;
-                        }
-
-                        &>div:last-child {
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 0px 10px 10px;
-
-                            &>div:first-child {
-                                display: flex;
-                                width: 50px;
-                                justify-content: space-between;
-                                align-items: center;
-                                text-align: left;
-
-                                .loveRed {
-                                    position: relative;
-                                    width: 10px;
-                                    height: 10px;
-                                    transform: rotate(45deg);
-                                    background-color: red;
-                                    animation: love 1s infinite;
-
-                                    &::after {
-                                        top: 0;
-                                        left: -50%;
-                                        content: '';
-                                        position: absolute;
-                                        width: 100%;
-                                        height: 100%;
-                                        border-radius: 50%;
-                                        background-color: red;
-                                        animation: love 1s infinite;
-                                    }
-
-                                    &::before {
-                                        top: -50%;
-                                        left: 0;
-                                        content: '';
-                                        position: absolute;
-                                        width: 100%;
-                                        height: 100%;
-                                        border-radius: 50%;
-                                        background-color: red;
-                                        animation: love 1s infinite;
-                                    }
-                                }
-
-                                //红心跳动动画
-                                @keyframes love {
-                                    0% {
-                                        width: 10px;
-                                        height: 10px;
-                                    }
-
-                                    20% {
-                                        width: 15px;
-                                        height: 15px;
-                                        background-color: rgb(216, 170, 181);
-                                    }
-
-                                    100% {
-                                        width: 10px;
-                                        height: 10px;
-                                    }
-                                }
-
+                            &>p {
+                                font-size: 14px;
+                                color: rgb(49, 42, 42);
+                                padding: 0px 14px 35px;
+                                font-weight: 700;
                             }
 
                             &>div:last-child {
                                 display: flex;
-                                justify-content: flex-end;
-                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0px 10px 10px;
+
 
                                 &>div:first-child {
-                                    text-align: right;
+                                    display: flex;
+                                    width: 50px;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    text-align: left;
 
-                                    width: 22px;
-                                    background: url('./../image/icon/zan.png') no-repeat 0px center;
-                                    padding-right: 10px;
-                                    cursor: pointer;
+                                    .loveRed {
+                                        position: relative;
+                                        width: 10px;
+                                        height: 10px;
+                                        transform: rotate(45deg);
+                                        background-color: red;
+                                        animation: love 1s infinite;
 
-                                    .bbb {
-                                        background: url('./../image/icon/zan_1.png') no-repeat 0px center;
+                                        &::after {
+                                            top: 0;
+                                            left: -50%;
+                                            content: '';
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 50%;
+                                            background-color: red;
+                                            animation: love 1s infinite;
+                                        }
+
+                                        &::before {
+                                            top: -50%;
+                                            left: 0;
+                                            content: '';
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 50%;
+                                            background-color: red;
+                                            animation: love 1s infinite;
+                                        }
                                     }
+
+                                    //红心跳动动画
+                                    @keyframes love {
+                                        0% {
+                                            width: 10px;
+                                            height: 10px;
+                                        }
+
+                                        20% {
+                                            width: 15px;
+                                            height: 15px;
+                                            background-color: rgb(216, 170, 181);
+                                        }
+
+                                        100% {
+                                            width: 10px;
+                                            height: 10px;
+                                        }
+                                    }
+
                                 }
 
                                 &>div:last-child {
-                                    cursor: pointer;
-                                    width: 22px;
-                                    text-align: right;
-                                    background: url('./../image/icon/reply.png') no-repeat 0px center;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: center;
+
+                                    &>div:first-child {
+                                        text-align: right;
+
+                                        width: 22px;
+                                        background: url('./../image/icon/zan.png') no-repeat 0px center;
+                                        padding-right: 10px;
+                                        cursor: pointer;
+
+                                        .bbb {
+                                            background: url('./../image/icon/zan_1.png') no-repeat 0px center;
+                                        }
+                                    }
+
+                                    &>div:last-child {
+                                        cursor: pointer;
+                                        width: 22px;
+                                        text-align: right;
+                                        background: url('./../image/icon/reply.png') no-repeat 0px center;
+                                    }
                                 }
                             }
                         }
+
                     }
                 }
             }
@@ -388,19 +420,24 @@ section {
             .center_deta_f {
                 .center_deta_b();
 
+                .center_deta_f_text {
+                    margin-top: -50px;
 
+                    .center_deta_f_text-1 {
+                        font-size: 14px;
+                        margin: 20px 5px;
+                        color: #44473c;
+                        // margin-bottom: 30px;
+                    }
 
-                .center_deta_f_text-1 {
-                    font-size: 14px;
-                    margin: 5px;
-                    color: #44473c;
+                    .center_deta_f_text-2 {
+                        font-size: 10px;
+                        margin: -5px 5px 8px;
+                        color: #b9aebf;
+                        padding-bottom: -40px;
+                    }
                 }
 
-                .center_deta_f_text-2 {
-                    font-size: 10px;
-                    margin: 5px;
-                    color: #b9aebf;
-                }
 
                 .price_out {
                     span {
