@@ -1,0 +1,129 @@
+body {
+  position: relative;
+}
+body .max-body {
+  width: 100%;
+  background-color: #F7F7F7;
+  padding-bottom: 20px;
+}
+body .max-body .link {
+  width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  padding-left: 30px;
+  color: #cccccc;
+}
+body .max-body .link a {
+  color: #cccccc;
+}
+body .max-body .center {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+body .max-body .center .center-left {
+  width: 700px;
+  background-color: white;
+  border-radius: 6px;
+}
+body .max-body .center .center-left .center-left-top {
+  height: 127px;
+  padding: 0px 25px;
+  border-bottom: 1px solid #cccccc;
+}
+body .max-body .center .center-left .center-left-top .spanone {
+  font-size: 25px;
+  padding: 30px 0px;
+}
+body .max-body .center .center-left .center-left-top a {
+  position: relative;
+  top: -7px;
+  left: 5px;
+  color: #cccccc;
+  font-size: 12px;
+}
+body .max-body .center .center-left .center-left-top span {
+  position: relative;
+  top: -7px;
+  left: 535px;
+  color: #cccccc;
+}
+body .max-body .center .center-left .center-left-top img {
+  width: 27px;
+}
+body .max-body .center .center-left .center-left-center {
+  padding: 20px 26px;
+}
+body .max-body .center .center-left .write-one {
+  font-size: 14px;
+  color: black;
+  padding-bottom: 10px;
+}
+body .max-body .center .center-left .write-center-title {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+body .max-body .center .center-left .write-center-body {
+  font-size: 14px;
+  color: black;
+}
+body .max-body .collect-box {
+  position: absolute;
+  top: 0px;
+  left: 733px;
+  width: 120px;
+  height: 110px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #cccccc;
+}
+body .max-body .collect-box .collect {
+  cursor: pointer;
+  font-size: 13px;
+  height: 80px;
+  text-align: center;
+}
+body .max-body .collect-box .collect div {
+  position: absolute;
+  top: 60px;
+  left: 24px;
+}
+body .max-body .collect-box .cokkect_ {
+  background: url(../image/icon/xinRedo.png) no-repeat center center;
+}
+body .max-body .share-box {
+  position: absolute;
+  top: 0px;
+  left: 854px;
+  width: 120px;
+  height: 110px;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #cccccc;
+}
+body .max-body .share-box .share {
+  position: absolute;
+  top: 30px;
+  left: 48px;
+  cursor: pointer;
+  font-size: 13px;
+}
+body .max-body .share-box .share .aaa {
+  display: block;
+}
+body .max-body .share-box .share .active {
+  display: none;
+}
+body .max-body .share-box img {
+  width: 24px;
+}
+body .max-body .share-box .active {
+  display: none;
+}
+body #found {
+  margin: auto;
+  position: absolute;
+  top: 260px;
+  right: 300px;
+}

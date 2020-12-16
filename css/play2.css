@@ -1,0 +1,304 @@
+ul,
+li {
+  list-style: none;
+}
+li img:hover {
+  transform: scale(1.1);
+}
+li p:hover {
+  color: orange;
+}
+.cool {
+  width: 100%;
+  height: 120px;
+  margin-top: 50px;
+}
+.cool p {
+  font-size: 40px;
+  text-align: center;
+}
+.cool .list {
+  width: 420px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.cool .bottom {
+  border-bottom: red solid 4px;
+}
+.cool .new {
+  float: left;
+  width: 140px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.cool .hot {
+  float: left;
+  width: 140px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.cool .sort {
+  float: left;
+  width: 140px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.main {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+ 
+ .one {
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+ .one .new_one {
+  height: auto;
+}
+ .one li > img:hover {
+  transform: scale(1.2);
+}
+ .one li {
+  float: left;
+  width: 225px;
+  height: 220px;
+  border: #999 1px solid;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 24px;
+  box-sizing: border-box;
+}
+ .one li .title {
+  font-size: 14px;
+  height: 30px;
+  color: #666;
+  margin-left: 5px;
+  line-height: 15px;
+  margin-top: 10px;
+}
+ .one li .price {
+  font-size: 12px;
+  color: red;
+  float: left;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+ .one li .like {
+  float: right;
+  width: 10px;
+  height: 15px;
+  font-size: 12px;
+  color: #666;
+  padding-left: 15px;
+  margin-top: 20px;
+  background: url(../image/icon/xin.png) no-repeat 0px 2px;
+}
+ .one li .words {
+  float: right;
+  width: 30px;
+  height: 15px;
+  font-size: 12px;
+  color: #666;
+  padding-left: 15px;
+  margin-top: 20px;
+  background: url(../image/icon/reply.png) no-repeat 0px 2px;
+}
+ .two {
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+ .there {
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 10px;
+  /* display: none; */
+  box-sizing: border-box;
+
+}
+ .there .live {
+  overflow: hidden;
+  background-color: #fff;
+  height: 450px;
+}
+ .there .live .live_b > ul {
+  overflow: hidden;
+  position: relative;
+  left: 66px;
+}
+ .there .live .live_b > ul > li {
+  float: left;
+  color: #888;
+  width: 120px;
+  text-align: center;
+  margin: 20px 30px 0px 0px;
+}
+ .there .live_a {
+  border-bottom: dashed 1px #888;
+}
+ .there .live_a > ul {
+  overflow: hidden;
+  position: relative;
+  left: -18px;
+}
+ .there .live_title {
+  float: left;
+  padding-left: 10px;
+  border-left: red 4px solid;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
+ .there .live_a > ul > li > p {
+  color: #888;
+}
+ .there .live_a > ul > li {
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+ .there .live_last {
+  position: relative;
+  left: 12px;
+}
+ .there .care {
+  margin-top: 40px;
+  background-color: #fff;
+  overflow: hidden;
+  height: 250px;
+}
+ .there .care .care_title {
+  float: left;
+  padding-left: 10px;
+  border-left: red 4px solid;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
+ .there .care .care_a {
+  border-bottom: dashed 1px #888;
+}
+ .there .care .care_a > ul {
+  overflow: hidden;
+  position: relative;
+  left: -53px;
+  top: 20px;
+  margin-bottom: 20px;
+}
+ .there .care .care_a > ul > li {
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+ .there .care .care_a > ul > li > p {
+  color: #888;
+}
+ .there .care .care_b > ul {
+  overflow: hidden;
+  position: relative;
+  left: 55px;
+}
+ .there .care .care_b > ul > li {
+  float: left;
+  color: #888;
+  margin: 20px 42px 4px 24px;
+}
+ .there .jk {
+  margin-top: 40px;
+  background-color: #fff;
+  overflow: hidden;
+  height: 250px;
+}
+ .there .jk .jk_title {
+  float: left;
+  padding-left: 10px;
+  border-left: red 4px solid;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
+ .there .jk .jk_a {
+  border-bottom: dashed 1px #888;
+}
+ .there .jk .jk_a > ul {
+  overflow: hidden;
+  position: relative;
+  left: -18px;
+  top: 20px;
+  margin-bottom: 20px;
+}
+ .there .jk .jk_a > ul > li {
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+ .there .jk .jk_a > ul > li > p {
+  color: #888;
+  text-align: center;
+    line-height: 30px;
+}
+ .there .jk .jk_b > ul {
+  overflow: hidden;
+  position: relative;
+  left: 55px;
+}
+ .there .jk .jk_b > ul > li {
+  float: left;
+  color: #888;
+  margin: 20px 42px 4px 24px;
+}
+ .there .zn {
+  overflow: hidden;
+  background-color: #fff;
+  height: 210px;
+  margin-top: 50px;
+}
+ .there .zn .zn_b > ul {
+  overflow: hidden;
+  position: relative;
+  left: 66px;
+}
+ .there .zn .zn_b > ul > li {
+  float: left;
+  color: #888;
+  width: 120px;
+  text-align: center;
+  margin: 20px 30px 0px 0px;
+}
+ .there .zn_a {
+  border-bottom: dashed 1px #888;
+}
+ .there .zn_a > ul {
+  overflow: hidden;
+  position: relative;
+  left: -50px;
+}
+ .there .zn_title {
+  float: left;
+  padding-left: 10px;
+  border-left: red 4px solid;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
+ .there .zn_a > ul > li > p {
+  color: #888;
+}
+ .there .zn_a > ul > li {
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+ .there .zn_last {
+  position: relative;
+  left: 12px;
+}

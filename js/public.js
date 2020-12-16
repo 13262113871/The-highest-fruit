@@ -33,69 +33,34 @@ $('.footer_return').on('click',function(){
 
 
 
-/* 登录 */
-// $('#phone').on('focus',function(){
-//     $(this).val('');
-//     $(this).css('color','black');
-// });
-// $('#phone').on('blur',function(){
-//     if($('#phone').val().search(/^1[3578]\d{9}$/)==-1){
-//     $(this).val('手机号格式不正确！');
-//     $(this).css('color','red');
-//     return;
-// };
-// });
-// $('#password').on('focus',function(){
-//     $(this).val('');
-//     $(this).css('color','black');
-// });
-// $('#password').on('blur',function(){
-//     if($('#password').val().search(/^[^\s\u4e00-\u9fa5]{6,16}$/)==-1){
-//     $(this).val('');    
-//     alert('密码格式不正确！');
-//     $(this).css('color','red');
-//     return;
-// };
-// });
 
+// 点击登录
 
-// $('#login').on('click',function(){
-//     var phone=$('#phone').val();
-//     var pass=$('#password').val();
-//     if(phone==''&&pass==''){
-//         alert('请输入手机号和密码');
-//     }else if($('#phone').css('color')=='rgb(255, 0, 0)'||$('#password').css('color')=='rgb(255, 0, 0)'){
-//         alert('手机号码或者密码格式不正确！')
-//     } else{
-//         $.ajax({
-//             url:adress+'/users',
-//             type:'post',
-//             data:{
-//                 type:'login',
-//                 phone:phone,
-//                 pass:pass
-//             },
-//             success:function (json) {
-//                 json=JSON.parse(json);
-//                 console.log(json);
-//                 alert(json.msg);
-//                 if($('#checkbox').is(':checked')){
-//                             localStorage.setItem('phone',$('#phone').val());
-//                             localStorage.setItem('psd',$('#password').val());
-//                             localStorage.setItem('tick',$('#checkbox').is(':checked'));
-//                         }   
-//                         else{
-//                             localStorage.clear();
-//                 }
-//             }
-//         })
-//    }
-   
-// });
-
-//记住密码
-    if(localStorage.getItem('tick')){
-        $('#phone').val(localStorage.getItem('phone'));
-        $('#password').val(localStorage.getItem('psd'));
-        $('#checkbox').attr('checked',localStorage.getItem('tick'));
-    }
+    $('#login').on('click',function(){
+            $.ajax({
+                url:'http://192.168.1.94:3000/users/login',
+                type:'post',
+                data:{
+                    username:$('#phone').val(),
+                    password:$('#password').val()
+                },
+                success:function (res) {
+                    alert(res.msg);
+                    if($('#checkbox').is(':checked')){
+                                localStorage.setItem('phone',$('#phone').val());
+                                localStorage.setItem('psd',$('#password').val());
+                                localStorage.setItem('tick',$('#checkbox').is(':checked'));
+                            }   
+                            else{
+                                localStorage.clear();
+                    }
+                }
+            })
+    });
+    
+    //记住密码
+        if(localStorage.getItem('tick')){
+            $('#phone').val(localStorage.getItem('phone'));
+            $('#password').val(localStorage.getItem('psd'));
+            $('#checkbox').attr('checked',localStorage.getItem('tick'));
+        }
