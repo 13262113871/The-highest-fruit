@@ -1,0 +1,79 @@
+.center {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.center .page-center {
+  position: relative;
+  width: 1000px;
+  height: 1050px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.center .page-center .page-center-left {
+  width: 280px;
+  height: 320px;
+  background-color: #F3F3F3;
+  border-radius: 6px;
+  border: 1px solid #F7F7F7;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.center .page-center .page-center-left .page-center-left-box {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 240px;
+  height: 280px;
+}
+.center .page-center .page-center-left .page-center-left-box .h1 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-indent: 1em;
+  border-bottom: 1px solid #cccccc;
+}
+.center .page-center .page-center-left .page-center-left-box .write dl dd {
+  font-size: 17px;
+  text-indent: 1em;
+  line-height: 40px;
+}
+.center .page-center .page-center-left .page-center-left-box .write dl dt {
+  font-size: 14px;
+  text-indent: 2em;
+  line-height: 30px;
+}
+.center .page-center .page-center-right {
+  position: absolute;
+  top: 50px;
+  left: 310px;
+  width: 670px;
+  height: 1000px;
+  background-color: #F3F3F3;
+  border-radius: 6px;
+  border: 1px solid #F7F7F7;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.center .page-center .page-center-right .page-center-right-box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  width: 630px;
+  height: 280px;
+}
+.center .page-center .page-center-right .page-center-right-box .h1 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 18px;
+}
+.center .page-center .page-center-right .page-center-right-box .write dl dd {
+  font-size: 17px;
+  line-height: 40px;
+}
+.center .page-center .page-center-right .page-center-right-box .write dl dt {
+  font-size: 14px;
+  line-height: 30px;
+}

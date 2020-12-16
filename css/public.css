@@ -393,3 +393,21 @@ dd.footer_jian {
     background: url('../image/icon/back.png') no-repeat center center;
     background-color: #e8e8e8;
 }
+
+/* 加载更多 */
+.main_more {
+    margin: 0 auto;
+    padding: 34px 0px 54px 0px;
+    width: 1000px;
+    text-align: center;
+}
+.main_more>.nomain_loading {
+    color: #ff5a25;
+    cursor: pointer;
+    background: url('./../image/icon/more.png') no-repeat 430px center;
+}
+.main_more>.main_loading {
+    color: #ff5a25;
+    cursor: pointer;
+    background: url('./../image/icon/loading-icon.gif') no-repeat 430px center;
+}

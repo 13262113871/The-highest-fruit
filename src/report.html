@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>试用</title>
+    <title>报告</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
     <link rel="stylesheet" href="../css/public.css">
-    <link rel="stylesheet" href="../css/guid.css">
-    <link rel="stylesheet" href="../css/help.css">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../css/report.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
 
 <body>
@@ -19,7 +18,7 @@
     <header class="head_total">
         <div class="head_main clearfix">
             <div class="head_img">
-                <a href="#"><img src="../image/img/logonew.png" alt="#"></a>
+                <a href="../index.html"><img src="../image/img/logonew.png" alt="#"></a>
             </div>
             <ul>
                 <li>
@@ -88,58 +87,62 @@
 
     <!-- 网页中部 -->
     <section>
-        <div class="paly_out">
-            <div class="play_inner">
-                <h1>免费试用</h1>
-                <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
-                    <ul class="layui-tab-title layui-anim layui-anim-scaleSpring" class="help_h">
-                        <li class="layui-this">最新 </li>
-                        <li>最热</li>
-                    </ul><hr>
-                    <div class="layui-tab-content" id="new_" style="margin-left: -100px;">
-
-                        <!-- //最新 -->
-                        <div class="layui-tab-item layui-show layui-anim layui-anim-up">
-                            <div class="layui-tab">
-                                <ul class="layui-tab-title layui-anim layui-anim-up">
-                                    <li class="layui-this">全部</li>
-                                    <li>申请中</li>
-                                    <li>使用中</li>
-                                    <li>已结束</li>
-                                </ul>
-                                <div class="layui-tab-content">
-                                    <div class="layui-tab-item layui-show layui-anim layui-anim-up"><ul class="new_ul new_ul1"></ul></div>
-                                    <div class="layui-tab-item layui-anim layui-anim-up"><ul class="new_ul new_ul1"></ul></div>
-                                    <div class="layui-tab-item layui-anim layui-anim-up"><ul class="new_ul new_ul1"></ul></div>
-                                    <div class="layui-tab-item layui-anim layui-anim-up"><ul class="new_ul new_ul1"></ul></div>
-                                </div>
-                            </div>
+        <!-- 中部版心 -->
+        <div class="mid_area">
+            <!-- 中部版心顶部 -->
+            <div class="mid_top_oneV">体检报告</div>
+            <div class="mid_top_twoV">
+                <span class="mid_top_spanC">最新</span>
+                <span>最热</span>
+            </div>
+            <!-- 中部版心（最新） -->
+            <div class="mid_main_body">
+                <div class="mid_main">
+                    <!-- 左边 渲染 -->
+                    <div class="mid_main_lf">
+                        <div class="mid_main_lfDiv"></div>
+                        <div class="mid_main_lfDiv"></div>
+                        <div class="mid_main_lfJz">
+                            <span><span></span> 点击加载更多</span>
+                            <span><span></span> 正在加载中...</span>
                         </div>
-
-                        <!-- //最热 -->
-                        <div class="layui-tab-item layui-anim layui-anim-up" id="hot_">
-                            <div class="layui-tab-item layui-show layui-anim layui-anim-up">
-                            <div class="layui-tab">
-                                <ul class="layui-tab-title layui-anim layui-anim-up">
-                                    <li class="layui-this">全部</li>
-                                    <li>申请中</li>
-                                    <li>使用中</li>
-                                    <li>已结束</li>
-                                </ul>
-                                <div class="layui-tab-content">
-                                    <div class="layui-tab-item layui-show layui-anim layui-anim-up"><ul class="new_ul new_ul1"></ul></div>
-                                    <div class="layui-tab-item layui-anim layui-anim-up"><ul class="new_ul new_ul1"></ul></div>
-                                    <div class="layui-tab-item layui-anim layui-anim-up"><ul class="new_ul new_ul1"></ul></div>
-                                    <div class="layui-tab-item layui-anim layui-anim-up"><ul class="new_ul new_ul1"></ul></div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
                     </div>
+                    <!-- 右边 -->
+                    <div class="mid_main_rg">
+                        <div class="mid_main_rgOne">
+                            <span>极果体验师</span>
+                            <img src="../image/img/tiyanImg.jpg" alt="">
+                            <p>福利</p>
+                            <span>第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软!</span>
+                            <p>要求</p>
+                            <span>是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</span>
+                            <p>申请</p>
+                            <span>
+                                1. 关注极果公众号：jguojguo<br>
+                                （或扫描下方二维码）<br>
+                                2. 在公众号内回复：体验师
+                            </span>
+                        </div>
+                        <div class="mid_main_rgTwo">
+                            <p>关注我们</p>
+                            <div>
+                                <img src="../image/img/code.png" alt="">
+                                <span>微信扫我</span><br>
+                                <span>关注极果酷玩</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </div>
     </section>
+
+
+
+
+
+
 
 
     <!-- 网页底部 -->
@@ -202,7 +205,6 @@
             &copy:2020 极果版权所有
         </div>
         <div class="footer_return">
-            
 
         </div>
     </footer>
@@ -210,37 +212,37 @@
 
 </html>
 <script src="../js/jquery-3.5.1.min.js"></script>
-<script src="../layui/layui.js"></script>
 <script src="../js/public.js"></script>
-<script src="../js/guid.js"></script>
+<script src="../js/report.js"></script>
 <script src="../js/doT.min.js"></script>
 
-
-<!-- 最新模板 -->
-<script id="new_ul11" type="text/x-dot-template">
-	{{~it:value:index}} 
-<li class="new_li">
-	<img src="{{=value.img}}" alt=''>
-	<div class="new_li_c">
-		<p><a href="../helpDemo.html">{{=value.text}}</a></p>
-		<!-- <p>可以测定失误成分及营养</p> -->
-	</div>
-	<div class="new_li_l">
-		<div class="new_li_l_price"></div>
-		<div class="new_li_l_l">
-			<div>{{=value.like}}</div>
-			<div>{{=value.words}}</div>
-		</div>
-    </div>	
-</li>
-{{~}} 
-</script>
-
-
 <script>
-    //Layui模块
-    layui.use(['element', 'laytpl'], function () {
-        var element = layui.element;
-        var laytpl = layui.laytpl;
-    });
+    layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
 </script>
+
+<script id="doT_list" type="text/x-dot-template">
+    {{for(var i in it){}}
+        <div class="mid_main_lfOne" style="background:url({{= it[i].img}}) no-repeat;background-size: 100%;">
+            <div class="mid_main_lfOne1">
+                <p>{{=it[i].text}}</p>
+                <p>
+                    <span></span>
+                    <span>{{=it[i].uName}}</span>
+                    <span>{{=it[i].endTime}}</span>
+                    <span class="mid_main_lfOneSpan zan">{{=it[i].totalnum}}</span>
+                    <span>{{=it[i].num}}</span>
+                </p>
+            </div>
+        </div>
+        {{? it[i].info_ty != undefined}}
+            <div class="mid_main_lfTwo">
+                <span>{{=it[i].info_ty}}</span>
+            </div>
+        {{?}}
+    {{}}}
+</script>
+
